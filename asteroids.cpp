@@ -3,7 +3,7 @@
 //
 //
 //program: asteroids.cpp
-//author:  Gordon Griesel
+//author:  Kuljit Singh
 //date:    2014 - 2018
 //mod spring 2015: added constructors
 //mod spring 2018: X11 wrapper class
@@ -750,6 +750,9 @@ void render()
 	
 	showName(gl.xres - 100, gl.yres - 20, 16, 0x00ffff00);
 	
+	extern void drawBox(int, int);
+	drawBox(gl.xres/2, gl.yres/2);
+
 	//-------------
 	//Draw the ship
 	glColor3fv(g.ship.color);
